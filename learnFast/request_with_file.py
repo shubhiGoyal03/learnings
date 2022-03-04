@@ -1,6 +1,7 @@
 import json
 
-from fastapi import FastAPI, Form, Body,File, UploadFile,Request
+from fastapi import FastAPI, Form, Body,File, UploadFile
+from fastapi.responses import FileResponse
 
 from pydantic import BaseModel
 from typing import Optional
@@ -15,9 +16,11 @@ class Item(BaseModel):
     tax: Optional[float] = None
 
 @app.post("/files/")
-async def create_file(file: bytes = File(...)):
-    return {"file_size": len(file)}
-
+async def create_file(myfile: UploadFile):
+    #print(file.title())
+    contents = myfile.file
+    print((myfile.file.read( )))
+    return myfile.content_type
 
 @app.post("/combine/")
 async def create_upload_file(file: UploadFile,request):

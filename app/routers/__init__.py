@@ -1,0 +1,1 @@
+#__path__=['.', '/Users/apple/Desktop/pythonScripts/app', '/Library/Frameworks/Python.framework/Versions/3.10/lib/python310.zip', '/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10', '/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload', '/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages']
