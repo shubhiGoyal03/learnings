@@ -14,3 +14,7 @@ d=json.loads(data)
 #for v in d["list"]:
 #    print(v.get("dt_txt"))
 print(d)
+
+http://api.openweathermap.org/data/2.5/weather?q=Goa&appid=4f3bd979ed8d7e8c58e7fc988ff8c06b&units=metric
+
+https://api.openweathermap.org/data/2.5/weather?q=Goa?appid=4f3bd979ed8d7e8c58e7fc988ff8c06b
